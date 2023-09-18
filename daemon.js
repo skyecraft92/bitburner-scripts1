@@ -127,7 +127,7 @@ let currentTerminalServer = ""; // Periodically updated when intelligence farmin
 let dictSourceFiles = (/**@returns{{[bitnode: number]: number;}}*/() => undefined)(); // Available source files
 let bitnodeMults = null; // bitnode multipliers that can be automatically determined after SF-5
 let isInBn8 = false; // Flag indicating whether we are in BN8 (where lots of rules change)
-let haveTixApi = false, have4sApi = false; // Whether we have WSE API accesses
+let haveTixApi = true, have4sApi = true; // Whether we have WSE API accesses
 let _cachedPlayerInfo = (/**@returns{Player}*/() => undefined)(); // stores multipliers for player abilities and other player info
 let _ns = (/**@returns{NS}*/() => undefined)(); // Globally available ns reference, for convenience
 
