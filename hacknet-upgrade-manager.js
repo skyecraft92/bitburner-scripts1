@@ -4,7 +4,7 @@ let haveHacknetServers = true; // Cached flag after detecting whether we do (or 
 const argsSchema = [
     ['max-payoff-time', '1h'], // Controls how far to upgrade hacknets. Can be a number of seconds, or an expression of minutes/hours (e.g. '123m', '4h')
     ['time', null], // alias for max-payoff-time
-    ['c', false], // Set to true to run continuously, otherwise, it runs once
+    ['c', true], // Set to true to run continuously, otherwise, it runs once
     ['continuous', false],
     ['interval', 1000], // Rate at which the program purchases upgrades when running continuously
     ['max-spend', Number.MAX_VALUE], // The maximum amount of money to spend on upgrades
