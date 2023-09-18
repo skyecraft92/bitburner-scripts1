@@ -30,7 +30,7 @@ const argsSchema = [
     ['run-once', false], // Same as above
     ['x', false], // Focus on a strategy that produces the most hack EXP rather than money
     ['xp-only', false], // Same as above
-    ['n', true], // Can toggle on using hacknet nodes for extra hacking ram (at the expense of hash production)
+    ['n', false], // Can toggle on using hacknet nodes for extra hacking ram (at the expense of hash production)
     ['use-hacknet-nodes', false], // Same as above (kept for backwards compatibility, but these are now called hacknet-servers)
     ['use-hacknet-servers', true], // Same as above, but the game recently renamed these
     ['spend-hashes-for-money-when-under', 10E6], // (Default 10m) Convert 4 hashes to money whenever we're below this amount
@@ -53,7 +53,7 @@ const argsSchema = [
     ['initial-study-time', 10], // Seconds. Set to 0 to not do any studying at startup. By default, if early in an augmentation, will start with a little study to boost hack XP
     ['initial-hack-xp-time', 10], // Seconds. Set to 0 to not do any hack-xp grinding at startup. By default, if early in an augmentation, will start with a little study to boost hack XP
     ['disable-script', []], // The names of scripts that you do not want run by our scheduler
-    ['run-script', [hud.js]], // The names of additional scripts that you want daemon to run on home
+    ['run-script', []], // The names of additional scripts that you want daemon to run on home
 ];
 
 export function autocomplete(data, args) {
